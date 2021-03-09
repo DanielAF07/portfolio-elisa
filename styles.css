@@ -24,7 +24,7 @@ html {
 .u-wrapper {
     max-inline-size: 1240px;
     margin: 0 auto;
-    /* padding: 0 1em; */
+    padding: 0 1em;
     /* border: 1px solid red; */
 }
 
