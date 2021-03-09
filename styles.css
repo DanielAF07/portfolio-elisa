@@ -369,7 +369,7 @@ html {
     }
     .circle:nth-child(4){
         background: radial-gradient(155% 155% at 50% 50%, rgba(40, 234, 232, 0.4) 0%, rgba(40, 234, 232, 0) 28.86%);
-        right: 0px;
+        left: 0;
         top: 2459px;
     }
 
@@ -380,7 +380,8 @@ html {
     }
     
     .u-wrapper {
-        margin: 0 128px;
+        margin: 0 117px;
+        max-inline-size: none;
     }
 
     .hero-content {
@@ -445,6 +446,7 @@ html {
     .project-commentary {
         margin: 80px 0;
         padding: 80px;
+        width: 100%;
     }
 
     .project-commentary .commentary {
