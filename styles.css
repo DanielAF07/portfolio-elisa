@@ -380,10 +380,9 @@ html {
         top: 4000px;
     }
     
-    /* .u-wrapper {
-        margin: 0 auto;
-        max-inline-size: 1132px;
-    } */
+    .u-wrapper {
+        padding: 0;
+    }
 
     .hero-content {
         display: flex;
