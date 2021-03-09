@@ -369,7 +369,7 @@ html {
     }
     .circle:nth-child(4){
         background: radial-gradient(155% 155% at 50% 50%, rgba(40, 234, 232, 0.4) 0%, rgba(40, 234, 232, 0) 28.86%);
-        left: 0;
+        right: 0;
         top: 2459px;
     }
 
