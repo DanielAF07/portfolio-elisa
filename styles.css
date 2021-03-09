@@ -392,11 +392,12 @@ html {
     .hero-content img {
         width: 50%;
         height: 50%;
+        margin-right: 0;
     }
 
     .hero-text {
         padding-top: 75px;
-        width: 400px;
+        width: 449px;
     }
 
     .comment p {
