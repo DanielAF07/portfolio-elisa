@@ -8,6 +8,7 @@
 body {
     font-family: var(--font);
     background: var(--gradient);
+    display: block;
     margin: 0;
 }
 
@@ -22,7 +23,7 @@ html {
 
 .u-wrapper {
     max-inline-size: 1240px;
-    margin: 0 1em;
+    margin: 0 auto;
     /* padding: 0 1em; */
     /* border: 1px solid red; */
 }
@@ -379,10 +380,10 @@ html {
         top: 4000px;
     }
     
-    .u-wrapper {
-        margin: 0 117px;
-        max-inline-size: none;
-    }
+    /* .u-wrapper {
+        margin: 0 auto;
+        max-inline-size: 1132px;
+    } */
 
     .hero-content {
         display: flex;
