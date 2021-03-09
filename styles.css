@@ -376,7 +376,7 @@ html {
     .circle:nth-child(5){
         background: radial-gradient(155% 155% at 50% 50%, rgba(40, 234, 232, 0.4) 0%, rgba(40, 234, 232, 0) 28.86%);
         left: -35px;
-        top: 4950px;
+        top: 4000px;
     }
     
     .u-wrapper {
