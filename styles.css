@@ -22,7 +22,7 @@ html {
 }
 
 .u-wrapper {
-    max-inline-size: 1240px;
+    max-inline-size: 1112px;
     margin: 0 auto;
     padding: 0 1em;
     /* border: 1px solid red; */
@@ -188,7 +188,7 @@ html {
 }
 
 .project-image {
-    width: 100%;
+     max-width: 100%;
     /* margin: 0; */
 }
 
@@ -212,14 +212,56 @@ html {
     margin: 0;
 }
 
+
 .project-commentary {
-    background: rgba(255, 255, 255, 0.2);
-    border: 4px solid rgba(255,255,255,0.3);
-    backdrop-filter: blur(40px);
-    border-radius: 24px;
-    padding: 24px;
-    margin-bottom: 80px;
+    margin-top: 40px;
+  margin-bottom: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  z-index: 0;
+  padding: 28px;
+  border-radius: 1.5rem;
+  background: rgba(255, 255, 255, 0.2);
 }
+
+.project-commentary i {
+    content: "";
+  position: absolute;
+  backdrop-filter: blur(39.7657px);
+
+  z-index: -1;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 1.5rem;
+  padding: 4px; /* the thickness of the border */
+  /* the below will do the magic */
+  -webkit-mask: linear-gradient(#fff 0 0) content-box,
+    /* this will cover only the content (no padding) */
+      linear-gradient(#fff 0 0) padding-box; /* this will cover the content and the padding */
+  -webkit-mask-composite: destination-out; /* needed for old browsers until the below is more supported */
+  mask-composite: exclude; /* this will exclude the first layer from the second so only the padding area will be kept visible */
+  }
+  
+  .project-commentary i::before {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    background: linear-gradient(
+        135deg,
+        rgba(255, 255, 255, 0.75) 0,
+        rgba(255, 255, 255, 0) 40%
+    );
+    transition: transform 0.7s linear;
+  }
 
 .project img {
     display: block;
@@ -475,13 +517,13 @@ html {
         text-align: center;
     }
     .project-commentary .commentary {
-        font-size: 34px;
+        font-size: 24px;
         line-height: 55.01px;
         font-weight: 700;
     }
 
     .project-commentary .author {
-        font-size: 24px;
+        font-size: 16px;
         line-height: 38.83px;
     }
     .contact-me {
